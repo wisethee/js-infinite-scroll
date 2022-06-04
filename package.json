@@ -1,0 +1,36 @@
+{
+  "name": "js-infinite-scroll",
+  "version": "1.0.0",
+  "description": "unsplash random images infinite scroll",
+  "main": "index.js",
+   "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --open",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisethee/js-infinite-scroll.git"
+  },
+  "author": "Marius P.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wisethee/js-infinite-scroll/issues"
+  },
+  "homepage": "https://github.com/wisethee/js-infinite-scroll#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "2.6.2",
+    "sass": "^1.51.0",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  }
+}
