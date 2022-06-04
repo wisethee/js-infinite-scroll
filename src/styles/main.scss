@@ -1,68 +1,65 @@
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-html,
-body,
-p,
-ol,
-ul,
-li,
-dl,
-dt,
-dd,
-blockquote,
-figure,
-fieldset,
-legend,
-textarea,
-pre,
-iframe,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-ul {
-  list-style: none;
-}
-button,
-input,
-select {
-  margin: 0;
-}
-html {
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
-img,
-video {
-  height: auto;
-  max-width: 100%;
+
+body {
+  font-family: "Anton", sans-serif;
+  margin: 0;
 }
-iframe {
-  border: 0;
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.09rem;
+  margin: 3rem 0 1.5rem;
+  color: hsla(50deg, 57%, 35%, 0.8);
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsla(255deg, 255%, 2550%, 0.12);
 }
-td,
-th {
-  padding: 0;
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container {
+  margin: 1rem 21%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  &:last-child {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 904px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .image-container {
+    margin: 1rem 3%;
+  }
+  .image-container img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+  }
 }
